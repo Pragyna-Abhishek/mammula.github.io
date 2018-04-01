@@ -1,0 +1,134 @@
+@keyframes intit
+{
+	from
+	{
+		font-size: 10px;
+	}
+	
+	top
+	{
+		font-size: 40px;
+	}
+}
+
+@keyframes rose
+{
+	from
+	{
+		bottom:78px;
+		left:-128px;
+	}
+	
+	top
+	{
+		bottom:128px;
+		left:0px;
+	}
+}
+
+@keyframes toast
+{
+	
+	0%
+	{
+		opacity:0;
+	}
+	
+	50%
+	{
+		opacity:1;
+	}
+	
+	100%
+	{
+		opacity:0;
+	}
+	
+}
+
+html, body 
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	min-height:100%;
+}
+
+body
+{
+	background: url("wallpc.jpg");
+	background-size: 100%;
+}
+
+.header
+{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	background: linear-gradient(rgb(32,69,75),rgb(32,69,95),rgb(35,62,92),rgb(0,11,15),rgb(38,53,74));
+	top: 0px;
+	left: 0px;
+	box-shadow: 0px 1px 40px #ddd;
+}
+
+.heading
+{
+	color: #fff;
+	font-size: 30px;
+	font-family: sans-serif;
+	position: relative;
+	top: -16px;
+	text-align: center;	
+}
+
+h1.title
+{
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	font-family: "Comic sans MS",sans-serif;
+	animation-name: intit;
+	animation-duration: 0.5s;
+}
+
+div.maindiv
+{
+	position: fixed;
+	margin-left: 30%;
+	margin-right:30%;
+	top:150px;
+	width:39%;
+	border-radius: 100px;
+	opacity: 0.5;
+	border-radius:30px;
+}
+
+button.mainbtn
+{
+	width:100%;
+	font-family: sans-serif;
+	font-size: 30px;
+	border: 10px #00f;
+}
+
+button.mainbtn:hover
+{
+	cursor:pointer;
+	background: #ccc;
+}
+
+button.mainbtn:focus
+{
+	outline:none;
+}
+
+img.rose
+{
+	height:128px;
+	width:128px;
+	position:fixed;
+	bottom:128px;
+	left:0px;
+	animation-name: rose;
+	animation-duration: 0.75s;
+}
